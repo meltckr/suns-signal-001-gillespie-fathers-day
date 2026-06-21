@@ -20,9 +20,8 @@ Series structure:
 - Contract/roster/game context around the featured story.
 - Public reaction from local media, national media, fans, X, Reddit, YouTube, podcasts, and blogs.
 - Suns implications.
-- Western Conference watch.
-- Eastern Conference watch.
-- League-level signal.
+- Around The League owner scan: league office signal, Western Conference watch, Eastern Conference watch, and market pulse.
+- Next Watch items for the following issue.
 
 - `index.html` is the finished newsletter.
 - `styles.css` controls the reusable Suns Signal visual system with discreet AVC provenance.
@@ -34,6 +33,6 @@ Series structure:
 - `assets/teams/suns/phoenix-suns-logo.png` is the local contextual Phoenix Suns team mark.
 - `assets/og-collin-gillespie-contract.png` is the iMessage/Open Graph preview image.
 
-For the next weekly edition, duplicate this folder, increment the issue number, replace the featured story, hero copy, player or subject image, source ledger, reaction map, and data strip, then keep the same header/footer and section structure. For a breaking item, use the same system but label it as `Suns Signal Live`.
+For the next weekly edition, duplicate this folder, increment the issue number, replace the featured story, hero copy, player or subject image, source ledger, reaction map, around-the-league scan, and data strip, then keep the same header/footer and section structure. For a breaking item, use the same system but label it as `Suns Signal Live` and keep the league scan optional.
 
 For iMessage previews, the page must be hosted at a public URL and the `og:image` metadata should point to the public URL for `assets/og-collin-gillespie-contract.png`.

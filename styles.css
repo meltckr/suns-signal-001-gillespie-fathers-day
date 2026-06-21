@@ -634,6 +634,77 @@ blockquote p {
   padding-left: 20px;
 }
 
+.league-roundup {
+  padding: clamp(24px, 5vw, 40px);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--blue);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.62)),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.1), rgba(39, 200, 194, 0.08));
+}
+
+.roundup-heading {
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+
+.roundup-heading h2 {
+  margin: 10px 0 12px;
+}
+
+.roundup-heading p {
+  margin-bottom: 0;
+}
+
+.roundup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.roundup-grid article {
+  min-height: 235px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(247, 243, 236, 0.8);
+}
+
+.roundup-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.roundup-grid h3 {
+  margin-bottom: 10px;
+}
+
+.roundup-grid p {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.roundup-grid a {
+  width: fit-content;
+  margin-top: auto;
+  margin-right: 12px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .watch-list {
   padding: clamp(24px, 5vw, 40px);
   border: 1px solid var(--line);
@@ -715,6 +786,7 @@ blockquote p {
   .newsletter-body,
   .reaction-list,
   .signal-lanes,
+  .roundup-grid,
   .watch-grid,
   .capture-grid {
     grid-template-columns: 1fr;
