@@ -375,20 +375,6 @@ h1 {
     linear-gradient(160deg, #292f3c, #11151c 70%);
 }
 
-.player-team-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 0;
-  width: 74px;
-  height: auto;
-  padding: 8px;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.07);
-  opacity: 0.82;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.24));
-}
-
 .player-headshot {
   position: relative;
   z-index: 1;
