@@ -369,22 +369,29 @@ h1 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  isolation: isolate;
   background:
-    radial-gradient(circle at 50% 22%, rgba(241, 152, 67, 0.3), transparent 34%),
+    radial-gradient(circle at 50% 25%, rgba(241, 152, 67, 0.28), transparent 34%),
     linear-gradient(160deg, #292f3c, #11151c 70%);
 }
 
 .player-team-logo {
   position: absolute;
-  top: 22px;
-  left: 22px;
-  width: 86px;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  width: 74px;
   height: auto;
-  opacity: 0.68;
-  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.28));
+  padding: 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.07);
+  opacity: 0.82;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.24));
 }
 
-.player-photo img {
+.player-headshot {
+  position: relative;
+  z-index: 1;
   width: min(96%, 430px);
   max-height: 420px;
   object-fit: contain;
@@ -403,16 +410,20 @@ h1 {
   color: var(--white);
 }
 
-.player-copy p {
-  color: rgba(255, 255, 255, 0.78);
+.photo-credit {
+  width: fit-content;
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
-.photo-credit {
-  margin-top: 16px;
-  color: rgba(255, 255, 255, 0.52);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+.player-copy p {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .data-strip div {
