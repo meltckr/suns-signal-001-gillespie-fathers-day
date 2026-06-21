@@ -86,7 +86,7 @@ for x in range(780, 1160, 38):
 bg = Image.alpha_composite(bg.convert("RGBA"), overlay)
 draw = ImageDraw.Draw(bg)
 
-draw.text((70, 54), "SUNS SIGNAL 001", font=bold, fill=(255, 255, 255, 245))
+draw.text((70, 54), "SUNS SIGNAL WEEKLY 001", font=bold, fill=(255, 255, 255, 245))
 draw.text((72, 90), "FATHER'S DAY EDITION", font=tiny, fill=(214, 225, 238, 210))
 draw.text((72, 118), "CURATED FOR MAT ISHBIA", font=tiny, fill=(241, 152, 67, 220))
 team_logo = Image.open(ASSETS / "teams" / "suns" / "phoenix-suns-logo.png").convert("RGBA")
