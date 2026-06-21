@@ -250,50 +250,12 @@ h1 {
   font-weight: 800;
 }
 
-.brief-grid {
-  width: min(var(--max), calc(100% - 36px));
-  margin: -42px auto 0;
-  position: relative;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.signal-card {
-  min-height: 230px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: 0 16px 40px rgba(18, 21, 27, 0.12);
-}
-
-.signal-card h2 {
-  margin: 12px 0 12px;
-  font-size: 25px;
-  line-height: 1.08;
-}
-
-.signal-card p,
 .rail-block p,
 .story p,
 .story li {
   color: #313843;
   font-size: 16px;
   line-height: 1.65;
-}
-
-.accent-copper {
-  border-top: 5px solid var(--copper);
-}
-
-.accent-teal {
-  border-top: 5px solid var(--teal);
-}
-
-.accent-violet {
-  border-top: 5px solid var(--violet);
 }
 
 .top-brief {
@@ -780,7 +742,6 @@ blockquote p {
 }
 
 @media (max-width: 900px) {
-  .brief-grid,
   .top-brief,
   .glance-grid,
   .newsletter-body,
@@ -821,10 +782,6 @@ blockquote p {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
-  }
-
-  .brief-grid {
-    margin-top: -24px;
   }
 
   .left-rail,
